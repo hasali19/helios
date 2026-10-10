@@ -4,3 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+color-eyre = "0.6.5"
+eyre = "0.6.14"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+
+[dependencies.smithay]
+git = "https://github.com/smithay/smithay"
+rev = "cf43a02acd6b5863909665c67f289f6f3478823a"
+# default-features = false
+# features = ["backend_winit", "wayland_frontend", "desktop"]
